@@ -1,9 +1,12 @@
 Examples:
 
 Using IRESfinder with mode 0:
-python IRESfinder.py -f Independent_TDSC.fa -o Independent_TDSC.result
+python ../IRESfinder.py -f example_mode_0.fa -o example_mode_0.result
+
+Using IRESfinder with mode 1:
+python ../IRESfinder.py -f example_mode_1.fa -o example_mode_1.result -m 1
 
 Using IRESfinder with mode 2:
-python IRESfinder.py -f Independent_TDSF.fa -o Independent_TDSF.result -m 2 -w 174 -s 50
+python ../IRESfinder.py -f example_mode_2.fa -o example_mode_2.result -m 2 -w 174 -s 50
 
 
