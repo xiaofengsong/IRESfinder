@@ -17,13 +17,13 @@ In most use cases the best way to install Python and scikit-learn package on you
 Examples are provided in the 'examples' folder.
 Examples:
 
-     Using IRESfinder with mode 0 (default), user can get a IRES score (probablity) for each sequence in .fa file:
+     Using IRESfinder with mode 0 (default), user can get a IRES score (probablity) for each sequence in .fa file,
      Command: python IRESfinder.py -f examples/example_mode_0.fa -o example_mode_0.result
 
-     Using IRESfinder with mode 1, user can specific the region to be identified in the '>xx" line of the .fa file:
+     Using IRESfinder with mode 1, user can specific the region to be identified in the '>xx" line of the .fa file,
      Command: python IRESfinder.py -f examples/example_mode_1.fa -o example_mode_1.result -m 1
 
-     Using IRESfinder with mode 2, user can search for the core IRES region:
+     Using IRESfinder with mode 2, user can search for the core IRES region by a sliding window (w: window size; s: step size),
      Command: python IRESfinder.py -f examples/example_mode_2.fa -o example_mode_2.result -m 2 -w 174 -s 50
 
 # Datasets
