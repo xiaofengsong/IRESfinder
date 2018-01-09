@@ -12,6 +12,19 @@ The following software should be installed in your cluster or computer before ru
 
 In most use cases the best way to install Python and scikit-learn package on your system is by using Anaconda(https://www.continuum.io), which is an easy-to-install free Python distirbution and includes more than 400 of the most popular Python packages. Anaconda includes installers(https://www.continuum.io/downloads) for Windows, OS X, and Linux.
 
+# Examples
+
+Examples are provided in the 'examples' folder.
+Examples:
+
+*     Using IRESfinder with mode 0 (default), user can get a IRES score (probablity) for each sequence in .fa file:
+*     python IRESfinder.py -f examples/example_mode_0.fa -o example_mode_0.result
+
+*     Using IRESfinder with mode 1, user can specific the region to be identified in the '>xx" line of the .fa file:
+*     python IRESfinder.py -f examples/example_mode_1.fa -o example_mode_1.result -m 1
+
+*     Using IRESfinder with mode 2, user can search for the core IRES region:
+*     python IRESfinder.py -f examples/example_mode_2.fa -o example_mode_2.result -m 2 -w 174 -s 50
 
 # Datasets
 
