@@ -1,1 +1,28 @@
 # IRESfinder
+
+IRESfinder is a python package for the identification of RNA internal ribosome entry site in eukaryotic cell, and it can be further used to search for the core IRES region.
+
+# Installation
+
+The following software should be installed in your cluster or computer before running the lncScore.py.
+
+*         Perl (>=5.10.1), https://www.perl.org/get.html.
+*         Python (>= 2.7), https://www.python.org/downloads/.
+*         The scikit-learn module, http://scikit-learn.org/stable/install.html.
+
+In most use cases the best way to install Python and scikit-learn package on your system is by using Anaconda(https://www.continuum.io), which is an easy-to-install free Python distirbution and includes more than 400 of the most popular Python packages. Anaconda includes installers(https://www.continuum.io/downloads) for Windows, OS X, and Linux.
+
+
+# Datasets
+
+The IRES and non-IRES sequences in the training and testing datasets are provided in the 'dataset' folder.
+
+# Author
+
+IRESfinder is developed by Jian Zhao (zhao_doctor@hotmail.com). For questions and comments, please contact Jian or submit an issue on github.
+
+# Reference
+
+- Zhao J, Wu J, Xu T, Yang Q, He J, Song X\*. IRESfinder: Identifying RNA Internal Ribosome Entry Site in Eukaryotic Cell using Framed K-mer Features. *Submitted*, 2018
+
+Copyright (C) 2018 Xiaofeng Song.
