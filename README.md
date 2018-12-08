@@ -36,5 +36,6 @@ IRESfinder is developed by Jian Zhao (zhao_doctor@hotmail.com). For questions an
 
 # Reference
 
-- Zhao J., Wu J., Xu T., Yang Q., He J., and Song X\*., 2018. IRESfinder: Identifying RNA Internal Ribosome Entry Site in Eukaryotic Cell using Framed K-mer Features. 2018, Journal of genetics and genomics= Yi chuan xue bao, 45(7), p.403.
+- Zhao J., Wu J., Xu T., Yang Q., He J., and Song X.\*, 2018. IRESfinder: Identifying RNA Internal Ribosome Entry Site in Eukaryotic Cell using Framed K-mer Features. 2018, Journal of genetics and genomics= Yi chuan xue bao, 45(7), p.403.
+
 Copyright (C) 2018 Xiaofeng Song.
