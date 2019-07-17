@@ -137,7 +137,7 @@ training_data = training_data[:,xindex]
 
 selected_findex = [0,50,1774,382,339,872,2069,197,250,119,98,13,591,1257,92,1117,822,258,1467]
 training_data = training_data[:,selected_findex]
-classifier = LogisticRegressionCV().fit(training_data,training_label)
+classifier = LogisticRegressionCV(cv=3).fit(training_data,training_label)
 
 #==============================================================================
 #  Predicting IRESs
