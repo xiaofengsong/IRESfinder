@@ -38,7 +38,7 @@ while(<ID>){
 	} else {
 		my $str = $_;
 		chomp $str;
-		if ($str > 5){
+		if (length($str) > 5){
 			print LAB $lab,"\n";
 			if ($st == 0 && $ed == 0){
 				print OUT $_;
