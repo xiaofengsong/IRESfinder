@@ -12,6 +12,7 @@ open(OUT,$output) || die "$!";
 open(LAB,$outlab) || die "$!";
 my $st = 0;
 my $ed = 0;
+my $lab;
 while(<ID>){
 	if (/^>/){
 		my $id = $_;
@@ -20,7 +21,8 @@ while(<ID>){
 		my @wd = split(' ',$id);
 		chomp @wd;
 		my $m = @wd;
-		print LAB join("_",@wd),"\n";
+		$lab = join("_",@wd);
+#		print LAB join("_",@wd),"\n";
 		if ($m >= 3){
 			$ed = pop @wd;
 			$st = pop @wd;
@@ -34,25 +36,29 @@ while(<ID>){
 			$ed = 0;
 		}
 	} else {
-			
-		if ($st == 0 && $ed == 0){
-			print OUT $_;
-		} elsif ($st >= $ed){
-			
-			print OUT $_;
-		} else {
-			my $str = $_;
-			chomp $str;
-			$st = $st - 1;
-			if ($ed <= length($str)){
-				my $len = $ed - $st;
-				print OUT substr($str,$st,$len),"\n";
+		my $str = $_;
+		chomp $str;
+		if ($str > 5){
+			print LAB $lab,"\n";
+			if ($st == 0 && $ed == 0){
+				print OUT $_;
+			} elsif ($st >= $ed){
+				
+				print OUT $_;
 			} else {
-				$ed = length($str);
-				my $len = $ed - $st;
-                                print OUT substr($str,$st,$len),"\n";
+#			my $str = $_;
+#			chomp $str;
+				$st = $st - 1;
+				if ($ed <= length($str)){
+					my $len = $ed - $st;
+					print OUT substr($str,$st,$len),"\n";
+				} else {
+					$ed = length($str);
+					my $len = $ed - $st;
+	                                print OUT substr($str,$st,$len),"\n";
+				}
 			}
-		}
+		} 
 	}
 }
 close(ID);
